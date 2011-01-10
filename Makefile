@@ -1,6 +1,6 @@
-GCCFLAGS=-g -Os -Wall -mmcu=atmega168 
+GCCFLAGS=-g -Os -Wall -mmcu=atmega168
 
-all: lcd.o
+all: hd44780_lcd.o
 
-lcd.o: lcd.c
-	avr-gcc ${GCCFLAGS} -o lcd.o -c lcd.c
+hd44780_lcd.o: hd44780_lcd.c
+	avr-gcc ${GCCFLAGS} -o hd44780_lcd.o -c hd44780_lcd.c 
